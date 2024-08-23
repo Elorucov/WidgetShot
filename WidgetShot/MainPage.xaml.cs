@@ -44,6 +44,7 @@ namespace WidgetShot {
             fop.FileTypeFilter.Add(".jpg");
             StorageFile file = await fop.PickSingleFileAsync();
             if (file != null) {
+                SelectedIconPath.Text = file.Path;
                 using (var stream = await file.OpenReadAsync()) {
                     double scale = Content.XamlRoot.RasterizationScale;
                     int size = Convert.ToInt32(16 * scale);
