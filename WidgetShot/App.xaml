@@ -10,7 +10,18 @@
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
                 <!-- Other merged dictionaries here -->
             </ResourceDictionary.MergedDictionaries>
-            <!-- Other app resources here -->
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Default">
+                    <SolidColorBrush x:Key="TransparentBrush" Color="#00000000"/>
+                    <SolidColorBrush x:Key="WidgetBackgroundBrush" Color="#333"/>
+                    <SolidColorBrush x:Key="WidgetTextBrush" Color="#FFF"/>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Light">
+                    <SolidColorBrush x:Key="TransparentBrush" Color="#00000000"/>
+                    <SolidColorBrush x:Key="WidgetBackgroundBrush" Color="#FFF"/>
+                    <SolidColorBrush x:Key="WidgetTextBrush" Color="#E4000000"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
