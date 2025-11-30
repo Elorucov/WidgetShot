@@ -1,16 +1,21 @@
 ﻿using AdaptiveCards.ObjectModel.Uwp;
 using AdaptiveCards.Rendering.Uwp;
+using Windows.UI;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml;
-using Windows.UI;
 
-namespace WidgetShot {
-    internal class ButtonActionRenderer : IAdaptiveActionRenderer {
-        public UIElement Render(IAdaptiveActionElement element, AdaptiveRenderContext context, AdaptiveRenderArgs renderArgs) {
+namespace WidgetShot
+{
+    internal class ButtonActionRenderer : IAdaptiveActionRenderer
+    {
+        public UIElement Render(IAdaptiveActionElement element, AdaptiveRenderContext context, AdaptiveRenderArgs renderArgs)
+        {
             renderArgs.AddContainerPadding = true;
-            var button = new Button {
-                Content = new TextBlock {
+            var button = new Button
+            {
+                Content = new TextBlock
+                {
                     Text = element.Title,
                     FontSize = 13,
                     LineHeight = 16

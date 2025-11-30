@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WidgetShot")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Widget Shot")]
+[assembly: AssemblyDescription("Tool for checking Windows 11 widgets and take its screenshots")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ELOR")]
-[assembly: AssemblyProduct("WidgetShot")]
-[assembly: AssemblyCopyright("Copyright © ELOR 2024")]
+[assembly: AssemblyProduct("Widget Shot")]
+[assembly: AssemblyCopyright("Copyright © 2026 Elchin Orujov")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

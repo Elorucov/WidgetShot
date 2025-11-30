@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="ELOR.WidgetsShot"
-    Publisher="CN=elor"
+    Name="25020ElchinOrujov.196213D4C1DCB"
+    Publisher="CN=0CC09DFB-403F-4ECF-8B95-0319E3C3BD41"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="13ff6b8f-d4ef-4870-a6bb-5a9e4285dee1" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="fcf81893-c4af-45a8-889b-4e1cf0b28b51" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>WidgetShot</DisplayName>
-    <PublisherDisplayName>elor</PublisherDisplayName>
+    <DisplayName>Widget Shot</DisplayName>
+    <PublisherDisplayName>Elchin Orujov</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -32,18 +32,19 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="WidgetShot.App">
       <uap:VisualElements
-        DisplayName="WidgetShot"
+        DisplayName="Widget Shot"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="WidgetShot"
+        Description="Tool for checking Windows 11 widgets and take its screenshots"
         BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="wide310x150Logo"/>
+            <uap:ShowOn Tile="square150x150Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile >
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>
   </Applications>
-
-  <Capabilities>
-    <Capability Name="internetClient" />
-  </Capabilities>
 </Package>

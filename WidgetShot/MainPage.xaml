@@ -20,7 +20,7 @@
         <Border Grid.RowSpan="2" Grid.Column="1" Background="{ThemeResource LayerFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1,0,0,0"/>
 
         <Grid x:Name="TitleBar">
-            <Image HorizontalAlignment="Left" Margin="8" Width="16" Height="16" Source="ms-appx:///Assets/LockScreenLogo.png"/>
+            <Image HorizontalAlignment="Left" Margin="8" Width="16" Height="16" Source="/Assets/StoreLogo.png"/>
             <TextBlock x:Name="WindowName" HorizontalAlignment="Left" FontSize="12" TextTrimming="CharacterEllipsis" Margin="32,8,0,0"/>
         </Grid>
 
@@ -50,12 +50,14 @@
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition/>
-                    <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock VerticalAlignment="Center" Text="Icon:"/>
                 <Button Grid.Column="1" Margin="8,0" Click="ChooseIcon" Content="Change"/>
                 <TextBlock x:Name="SelectedIconPath" Grid.Column="2" Margin="8,0" VerticalAlignment="Center"/>
-                <HyperlinkButton Grid.Column="3" Margin="8,0,0,0" Content="About" Click="HyperlinkButton_Click"/>
+                <StackPanel Grid.Column="2" HorizontalAlignment="Right" Orientation="Horizontal">
+                    <HyperlinkButton Margin="8,0,0,0" Content="Documentation" Click="DocLink_Click"/>
+                    <HyperlinkButton Margin="8,0,0,0" Content="About" Click="About_Click"/>
+                </StackPanel>
             </Grid>
         </Grid>
 
