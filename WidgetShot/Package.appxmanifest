@@ -9,7 +9,7 @@
   <Identity
     Name="25020ElchinOrujov.196213D4C1DCB"
     Publisher="CN=0CC09DFB-403F-4ECF-8B95-0319E3C3BD41"
-    Version="1.0.0.0" />
+    Version="1.0.1.0" />
 
   <mp:PhoneIdentity PhoneProductId="fcf81893-c4af-45a8-889b-4e1cf0b28b51" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
