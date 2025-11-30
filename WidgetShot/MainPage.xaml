@@ -24,7 +24,7 @@
             <TextBlock x:Name="WindowName" HorizontalAlignment="Left" FontSize="12" TextTrimming="CharacterEllipsis" Margin="32,8,0,0"/>
         </Grid>
 
-        <Grid x:Name="CodeArea" Grid.Column="0" Grid.Row="1" Margin="8,0,8,8">
+        <Grid x:Name="CodeArea" Grid.Column="0" Grid.Row="1" Margin="8,0,8,8" SizeChanged="CodeArea_SizeChanged">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -32,9 +32,10 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBox x:Name="TemplateCodeInput" Grid.Column="0" Grid.Row="1" Margin="8" VerticalAlignment="Stretch" AcceptsReturn="True" IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" FontSize="13" TextWrapping="Wrap" FontFamily="Consolas" Header="Template" PlaceholderText="Enter your widget template here..."/>
-            <TextBox x:Name="DataCodeInput" Grid.Column="1" Grid.Row="1" Margin="8" VerticalAlignment="Stretch" AcceptsReturn="True" IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" FontSize="13" TextWrapping="Wrap" FontFamily="Consolas" Header="Data" PlaceholderText="Enter your widget data here..."/>
+            <TextBox x:Name="TemplateCodeInput" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" Margin="8" VerticalAlignment="Stretch" AcceptsReturn="True" IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" FontSize="13" TextWrapping="Wrap" FontFamily="Consolas" Header="Template" PlaceholderText="Enter your widget template here..."/>
+            <TextBox x:Name="DataCodeInput" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Margin="8" VerticalAlignment="Stretch" AcceptsReturn="True" IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" FontSize="13" TextWrapping="Wrap" FontFamily="Consolas" Header="Data" PlaceholderText="Enter your widget data here..."/>
 
             <Grid Margin="8">
                 <Grid.ColumnDefinitions>
@@ -50,11 +51,12 @@
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock VerticalAlignment="Center" Text="Icon:"/>
                 <Button Grid.Column="1" Margin="8,0" Click="ChooseIcon" Content="Change"/>
-                <TextBlock x:Name="SelectedIconPath" Grid.Column="2" Margin="8,0" VerticalAlignment="Center"/>
-                <StackPanel Grid.Column="2" HorizontalAlignment="Right" Orientation="Horizontal">
+                <TextBlock x:Name="SelectedIconPath" Grid.Column="2" Margin="8,0" VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                <StackPanel Grid.Column="3" HorizontalAlignment="Right" Orientation="Horizontal">
                     <HyperlinkButton Margin="8,0,0,0" Content="Documentation" Click="DocLink_Click"/>
                     <HyperlinkButton Margin="8,0,0,0" Content="About" Click="About_Click"/>
                 </StackPanel>
